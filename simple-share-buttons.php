@@ -8,9 +8,9 @@
 
 
 function callback_for_setting_up_scripts() {
-    wp_register_style( 'tt_social_share_styles', plugin_dir_url( __FILE__ ) . 'css/style.css' );
+    wp_register_style( 'tt_social_share_styles', plugin_dir_url( __FILE__ ) . '/styles.css' );
     wp_enqueue_style( 'tt_social_share_styles' );
-    wp_enqueue_script( 'tt_social_share_styles', plugin_dir_url( __FILE__ ) . 'css/style.css' );
+    wp_enqueue_script( 'tt_social_share_styles', plugin_dir_url( __FILE__ ) . '/styles.css' );
 }
 add_action('wp_enqueue_scripts', 'callback_for_setting_up_scripts');
 
